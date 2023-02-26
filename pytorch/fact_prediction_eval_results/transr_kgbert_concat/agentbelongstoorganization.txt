@@ -1,0 +1,9 @@
+('How many paths used: ', 1)
+('How many queries: ', 1216)
+('right', 1)
+no such entity
+('TransE: ', 0.3498813581027067)
+('TransR: ', 0.3745072021277813)
+('RL: ', 0.24749054239414764)
+('TransH: ', 0.3986994430055107)
+('TransD: ', 0.41881413467340556)

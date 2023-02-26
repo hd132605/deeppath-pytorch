@@ -1,0 +1,376 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="AutoImportSettings">
+    <option name="autoReloadType" value="SELECTIVE" />
+  </component>
+  <component name="ChangeListManager">
+    <list default="true" id="f09a1c08-d5af-4476-b52f-572b8d25d0da" name="Changes" comment="Optimization&#10;-before-&#10;read entity2id.txt and relation2id.txt every time when making Env class, so delaying occurs.&#10;-after-&#10;read each files only once.">
+      <change afterPath="$PROJECT_DIR$/NELL-995/entity2kgbert" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/NELL-995/relation2kgbert" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/pytorch/pathfinder_bert.sh" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/pytorch/policy_agent_bert.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/pytorch/sl_policy_bert.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/RL-KnowledgeReasoning.iml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/RL-KnowledgeReasoning.iml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/deployment.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/deployment.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/misc.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/NELL-995/tasks/concept_agentbelongstoorganization/path_stats.txt" beforeDir="false" afterPath="$PROJECT_DIR$/NELL-995/tasks/concept_agentbelongstoorganization/path_stats.txt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/NELL-995/tasks/concept_agentbelongstoorganization/path_to_use.txt" beforeDir="false" afterPath="$PROJECT_DIR$/NELL-995/tasks/concept_agentbelongstoorganization/path_to_use.txt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/NELL-995/tasks/concept_athletehomestadium/path_stats.txt" beforeDir="false" afterPath="$PROJECT_DIR$/NELL-995/tasks/concept_athletehomestadium/path_stats.txt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/NELL-995/tasks/concept_athletehomestadium/path_to_use.txt" beforeDir="false" afterPath="$PROJECT_DIR$/NELL-995/tasks/concept_athletehomestadium/path_to_use.txt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/NELL-995/tasks/concept_athleteplaysforteam/path_stats.txt" beforeDir="false" afterPath="$PROJECT_DIR$/NELL-995/tasks/concept_athleteplaysforteam/path_stats.txt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/NELL-995/tasks/concept_athleteplaysforteam/path_to_use.txt" beforeDir="false" afterPath="$PROJECT_DIR$/NELL-995/tasks/concept_athleteplaysforteam/path_to_use.txt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/NELL-995/tasks/concept_athleteplaysinleague/path_stats.txt" beforeDir="false" afterPath="$PROJECT_DIR$/NELL-995/tasks/concept_athleteplaysinleague/path_stats.txt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/NELL-995/tasks/concept_athleteplaysinleague/path_to_use.txt" beforeDir="false" afterPath="$PROJECT_DIR$/NELL-995/tasks/concept_athleteplaysinleague/path_to_use.txt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/NELL-995/tasks/concept_athleteplayssport/path_stats.txt" beforeDir="false" afterPath="$PROJECT_DIR$/NELL-995/tasks/concept_athleteplayssport/path_stats.txt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/NELL-995/tasks/concept_athleteplayssport/path_to_use.txt" beforeDir="false" afterPath="$PROJECT_DIR$/NELL-995/tasks/concept_athleteplayssport/path_to_use.txt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/NELL-995/tasks/concept_organizationheadquarteredincity/path_stats.txt" beforeDir="false" afterPath="$PROJECT_DIR$/NELL-995/tasks/concept_organizationheadquarteredincity/path_stats.txt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/NELL-995/tasks/concept_organizationheadquarteredincity/path_to_use.txt" beforeDir="false" afterPath="$PROJECT_DIR$/NELL-995/tasks/concept_organizationheadquarteredincity/path_to_use.txt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/NELL-995/tasks/concept_organizationhiredperson/path_stats.txt" beforeDir="false" afterPath="$PROJECT_DIR$/NELL-995/tasks/concept_organizationhiredperson/path_stats.txt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/NELL-995/tasks/concept_organizationhiredperson/path_to_use.txt" beforeDir="false" afterPath="$PROJECT_DIR$/NELL-995/tasks/concept_organizationhiredperson/path_to_use.txt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/NELL-995/tasks/concept_personborninlocation/path_stats.txt" beforeDir="false" afterPath="$PROJECT_DIR$/NELL-995/tasks/concept_personborninlocation/path_stats.txt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/NELL-995/tasks/concept_personborninlocation/path_to_use.txt" beforeDir="false" afterPath="$PROJECT_DIR$/NELL-995/tasks/concept_personborninlocation/path_to_use.txt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/NELL-995/tasks/concept_personleadsorganization/path_stats.txt" beforeDir="false" afterPath="$PROJECT_DIR$/NELL-995/tasks/concept_personleadsorganization/path_stats.txt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/NELL-995/tasks/concept_personleadsorganization/path_to_use.txt" beforeDir="false" afterPath="$PROJECT_DIR$/NELL-995/tasks/concept_personleadsorganization/path_to_use.txt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/NELL-995/tasks/concept_teamplaysinleague/path_stats.txt" beforeDir="false" afterPath="$PROJECT_DIR$/NELL-995/tasks/concept_teamplaysinleague/path_stats.txt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/NELL-995/tasks/concept_teamplaysinleague/path_to_use.txt" beforeDir="false" afterPath="$PROJECT_DIR$/NELL-995/tasks/concept_teamplaysinleague/path_to_use.txt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/NELL-995/tasks/concept_teamplayssport/path_stats.txt" beforeDir="false" afterPath="$PROJECT_DIR$/NELL-995/tasks/concept_teamplayssport/path_stats.txt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/NELL-995/tasks/concept_teamplayssport/path_to_use.txt" beforeDir="false" afterPath="$PROJECT_DIR$/NELL-995/tasks/concept_teamplayssport/path_to_use.txt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/NELL-995/tasks/concept_worksfor/path_stats.txt" beforeDir="false" afterPath="$PROJECT_DIR$/NELL-995/tasks/concept_worksfor/path_stats.txt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/NELL-995/tasks/concept_worksfor/path_to_use.txt" beforeDir="false" afterPath="$PROJECT_DIR$/NELL-995/tasks/concept_worksfor/path_to_use.txt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/pytorch/env.py" beforeDir="false" afterPath="$PROJECT_DIR$/pytorch/env.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/pytorch/fact_prediction_eval.py" beforeDir="false" afterPath="$PROJECT_DIR$/pytorch/fact_prediction_eval.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/pytorch/networks.py" beforeDir="false" afterPath="$PROJECT_DIR$/pytorch/networks.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/pytorch/policy_agent.py" beforeDir="false" afterPath="$PROJECT_DIR$/pytorch/policy_agent.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/pytorch/sl_policy.py" beforeDir="false" afterPath="$PROJECT_DIR$/pytorch/sl_policy.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/pytorch/utils.py" beforeDir="false" afterPath="$PROJECT_DIR$/pytorch/utils.py" afterDir="false" />
+    </list>
+    <option name="SHOW_DIALOG" value="false" />
+    <option name="HIGHLIGHT_CONFLICTS" value="true" />
+    <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
+    <option name="LAST_RESOLUTION" value="IGNORE" />
+  </component>
+  <component name="FileTemplateManagerImpl">
+    <option name="RECENT_TEMPLATES">
+      <list>
+        <option value="Python Script" />
+      </list>
+    </option>
+  </component>
+  <component name="Git.Settings">
+    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
+  </component>
+  <component name="GitSEFilterConfiguration">
+    <file-type-list>
+      <filtered-out-file-type name="LOCAL_BRANCH" />
+      <filtered-out-file-type name="REMOTE_BRANCH" />
+      <filtered-out-file-type name="TAG" />
+      <filtered-out-file-type name="COMMIT_BY_MESSAGE" />
+    </file-type-list>
+  </component>
+  <component name="MarkdownSettingsMigration">
+    <option name="stateVersion" value="1" />
+  </component>
+  <component name="ProjectId" id="27m04pKlaPP1G3dnb9WEo7Z7kYZ" />
+  <component name="ProjectLevelVcsManager" settingsEditedManually="true" />
+  <component name="ProjectViewState">
+    <option name="hideEmptyMiddlePackages" value="true" />
+    <option name="showLibraryContents" value="true" />
+  </component>
+  <component name="PropertiesComponent">
+    <property name="WebServerToolWindowFactoryState" value="true" />
+    <property name="node.js.detected.package.eslint" value="true" />
+    <property name="node.js.detected.package.tslint" value="true" />
+    <property name="node.js.selected.package.eslint" value="(autodetect)" />
+    <property name="node.js.selected.package.tslint" value="(autodetect)" />
+    <property name="settings.editor.selected.configurable" value="com.jetbrains.python.configuration.PyActiveSdkModuleConfigurable" />
+  </component>
+  <component name="RecentsManager">
+    <key name="CopyFile.RECENT_KEYS">
+      <recent name="C:\Users\ysjs\OneDrive - 고려대학교\_\NLPlab\Deeppath\jooinjang_retrieve\NELL-995" />
+      <recent name="C:\Users\ysjs\OneDrive - 고려대학교\_\NLPlab\Deeppath\jooinjang_retrieve\pytorch" />
+      <recent name="C:\Users\15UD70N-GX56K\_\NLPlab\Deeppath\jooinjang_retrieve\pytorch" />
+    </key>
+  </component>
+  <component name="RunManager" selected="Python.sl_policy_bert">
+    <configuration name="fact_prediction_eval" type="PythonConfigurationType" factoryName="Python" temporary="true" nameIsGenerated="true">
+      <module name="RL-KnowledgeReasoning" />
+      <option name="INTERPRETER_OPTIONS" value="" />
+      <option name="PARENT_ENVS" value="true" />
+      <envs>
+        <env name="PYTHONUNBUFFERED" value="1" />
+      </envs>
+      <option name="SDK_HOME" value="" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/pytorch" />
+      <option name="IS_MODULE_SDK" value="true" />
+      <option name="ADD_CONTENT_ROOTS" value="true" />
+      <option name="ADD_SOURCE_ROOTS" value="true" />
+      <EXTENSION ID="PythonCoverageRunConfigurationExtension" runner="coverage.py" />
+      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/pytorch/fact_prediction_eval.py" />
+      <option name="PARAMETERS" value="concept_agentbelongstoorganization" />
+      <option name="SHOW_COMMAND_LINE" value="false" />
+      <option name="EMULATE_TERMINAL" value="false" />
+      <option name="MODULE_MODE" value="false" />
+      <option name="REDIRECT_INPUT" value="false" />
+      <option name="INPUT_FILE" value="" />
+      <method v="2" />
+    </configuration>
+    <configuration name="policy_agent_bert" type="PythonConfigurationType" factoryName="Python" temporary="true" nameIsGenerated="true">
+      <module name="RL-KnowledgeReasoning" />
+      <option name="INTERPRETER_OPTIONS" value="" />
+      <option name="PARENT_ENVS" value="true" />
+      <envs>
+        <env name="PYTHONUNBUFFERED" value="1" />
+      </envs>
+      <option name="SDK_HOME" value="" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/pytorch" />
+      <option name="IS_MODULE_SDK" value="true" />
+      <option name="ADD_CONTENT_ROOTS" value="true" />
+      <option name="ADD_SOURCE_ROOTS" value="true" />
+      <EXTENSION ID="PythonCoverageRunConfigurationExtension" runner="coverage.py" />
+      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/pytorch/policy_agent_bert.py" />
+      <option name="PARAMETERS" value="concept_agentbelongstoorganization test" />
+      <option name="SHOW_COMMAND_LINE" value="false" />
+      <option name="EMULATE_TERMINAL" value="false" />
+      <option name="MODULE_MODE" value="false" />
+      <option name="REDIRECT_INPUT" value="false" />
+      <option name="INPUT_FILE" value="" />
+      <method v="2" />
+    </configuration>
+    <configuration name="policy_agent_bert" type="PythonConfigurationType" factoryName="Python" temporary="true" nameIsGenerated="true">
+      <module name="RL-KnowledgeReasoning" />
+      <option name="INTERPRETER_OPTIONS" value="" />
+      <option name="PARENT_ENVS" value="true" />
+      <envs>
+        <env name="PYTHONUNBUFFERED" value="1" />
+      </envs>
+      <option name="SDK_HOME" value="" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/pytorch" />
+      <option name="IS_MODULE_SDK" value="true" />
+      <option name="ADD_CONTENT_ROOTS" value="true" />
+      <option name="ADD_SOURCE_ROOTS" value="true" />
+      <EXTENSION ID="PythonCoverageRunConfigurationExtension" runner="coverage.py" />
+      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/pytorch/policy_agent_bert.py" />
+      <option name="PARAMETERS" value="concept_agentbelongstoorganization test" />
+      <option name="SHOW_COMMAND_LINE" value="false" />
+      <option name="EMULATE_TERMINAL" value="false" />
+      <option name="MODULE_MODE" value="false" />
+      <option name="REDIRECT_INPUT" value="false" />
+      <option name="INPUT_FILE" value="" />
+      <method v="2" />
+    </configuration>
+    <configuration name="sl_policy" type="PythonConfigurationType" factoryName="Python" temporary="true" nameIsGenerated="true">
+      <module name="RL-KnowledgeReasoning" />
+      <option name="INTERPRETER_OPTIONS" value="" />
+      <option name="PARENT_ENVS" value="true" />
+      <envs>
+        <env name="PYTHONUNBUFFERED" value="1" />
+      </envs>
+      <option name="SDK_HOME" value="" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/pytorch" />
+      <option name="IS_MODULE_SDK" value="true" />
+      <option name="ADD_CONTENT_ROOTS" value="true" />
+      <option name="ADD_SOURCE_ROOTS" value="true" />
+      <EXTENSION ID="PythonCoverageRunConfigurationExtension" runner="coverage.py" />
+      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/pytorch/sl_policy.py" />
+      <option name="PARAMETERS" value="" />
+      <option name="SHOW_COMMAND_LINE" value="false" />
+      <option name="EMULATE_TERMINAL" value="false" />
+      <option name="MODULE_MODE" value="false" />
+      <option name="REDIRECT_INPUT" value="false" />
+      <option name="INPUT_FILE" value="" />
+      <method v="2" />
+    </configuration>
+    <configuration name="sl_policy_bert" type="PythonConfigurationType" factoryName="Python" temporary="true" nameIsGenerated="true">
+      <module name="RL-KnowledgeReasoning" />
+      <option name="INTERPRETER_OPTIONS" value="" />
+      <option name="PARENT_ENVS" value="true" />
+      <envs>
+        <env name="PYTHONUNBUFFERED" value="1" />
+      </envs>
+      <option name="SDK_HOME" value="" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/pytorch" />
+      <option name="IS_MODULE_SDK" value="true" />
+      <option name="ADD_CONTENT_ROOTS" value="true" />
+      <option name="ADD_SOURCE_ROOTS" value="true" />
+      <EXTENSION ID="PythonCoverageRunConfigurationExtension" runner="coverage.py" />
+      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/pytorch/sl_policy_bert.py" />
+      <option name="PARAMETERS" value="concept_agentbelongstoorganization" />
+      <option name="SHOW_COMMAND_LINE" value="false" />
+      <option name="EMULATE_TERMINAL" value="false" />
+      <option name="MODULE_MODE" value="false" />
+      <option name="REDIRECT_INPUT" value="false" />
+      <option name="INPUT_FILE" value="" />
+      <method v="2" />
+    </configuration>
+    <list>
+      <item itemvalue="Python.policy_agent_bert" />
+      <item itemvalue="Python.sl_policy_bert" />
+      <item itemvalue="Python.fact_prediction_eval" />
+      <item itemvalue="Python.sl_policy" />
+    </list>
+    <recent_temporary>
+      <list>
+        <item itemvalue="Python.sl_policy_bert" />
+        <item itemvalue="Python.policy_agent_bert" />
+        <item itemvalue="Python.policy_agent_bert" />
+        <item itemvalue="Python.fact_prediction_eval" />
+        <item itemvalue="Python.sl_policy" />
+      </list>
+    </recent_temporary>
+  </component>
+  <component name="SpellCheckerSettings" RuntimeDictionaries="0" Folders="0" CustomDictionaries="0" DefaultDictionary="application-level" UseSingleDictionary="true" transferred="true" />
+  <component name="TaskManager">
+    <task active="true" id="Default" summary="Default task">
+      <changelist id="f09a1c08-d5af-4476-b52f-572b8d25d0da" name="Changes" comment="" />
+      <created>1649909767920</created>
+      <option name="number" value="Default" />
+      <option name="presentableId" value="Default" />
+      <updated>1649909767920</updated>
+      <workItem from="1649909771139" duration="9129000" />
+      <workItem from="1649921643697" duration="5295000" />
+      <workItem from="1649986122330" duration="9954000" />
+      <workItem from="1650003621404" duration="7862000" />
+      <workItem from="1650210076122" duration="2516000" />
+      <workItem from="1650260082138" duration="3699000" />
+      <workItem from="1650366632311" duration="7067000" />
+      <workItem from="1651403037366" duration="11248000" />
+      <workItem from="1651760983143" duration="1628000" />
+      <workItem from="1651826184555" duration="926000" />
+      <workItem from="1651933578757" duration="1493000" />
+      <workItem from="1651984694425" duration="10594000" />
+      <workItem from="1652062120186" duration="4290000" />
+      <workItem from="1652146919602" duration="2000" />
+      <workItem from="1652155177807" duration="20565000" />
+      <workItem from="1652689491651" duration="5984000" />
+      <workItem from="1655786323895" duration="9437000" />
+      <workItem from="1656987083842" duration="11051000" />
+      <workItem from="1657084176438" duration="18495000" />
+      <workItem from="1657203955254" duration="8624000" />
+      <workItem from="1657269027725" duration="728000" />
+      <workItem from="1657351089899" duration="3738000" />
+      <workItem from="1657436584450" duration="2368000" />
+      <workItem from="1657460906670" duration="4719000" />
+      <workItem from="1657512416254" duration="620000" />
+      <workItem from="1658033612176" duration="673000" />
+      <workItem from="1658059194929" duration="63521000" />
+      <workItem from="1658289712756" duration="2028000" />
+      <workItem from="1658460834500" duration="6821000" />
+      <workItem from="1658650659654" duration="12301000" />
+      <workItem from="1658719001412" duration="9633000" />
+      <workItem from="1658802608387" duration="2007000" />
+      <workItem from="1658897424494" duration="16922000" />
+      <workItem from="1658975258288" duration="2160000" />
+      <workItem from="1659077183287" duration="2113000" />
+      <workItem from="1659440240114" duration="778000" />
+      <workItem from="1659507240984" duration="1441000" />
+      <workItem from="1659580642925" duration="1251000" />
+      <workItem from="1659788119085" duration="727000" />
+      <workItem from="1659856526542" duration="3686000" />
+      <workItem from="1659941427604" duration="4802000" />
+      <workItem from="1660014173278" duration="1388000" />
+      <workItem from="1660567876465" duration="2235000" />
+      <workItem from="1660616370880" duration="7250000" />
+      <workItem from="1660716247338" duration="1363000" />
+      <workItem from="1660789628005" duration="1190000" />
+      <workItem from="1660997551029" duration="1121000" />
+      <workItem from="1661085065267" duration="1344000" />
+      <workItem from="1661241171906" duration="1508000" />
+      <workItem from="1661495802153" duration="13414000" />
+      <workItem from="1661594287406" duration="606000" />
+      <workItem from="1661686239986" duration="1303000" />
+      <workItem from="1661833341712" duration="1209000" />
+      <workItem from="1661917044425" duration="18000" />
+      <workItem from="1662652077366" duration="200000" />
+      <workItem from="1664892328957" duration="870000" />
+      <workItem from="1666352177437" duration="2804000" />
+      <workItem from="1666405857731" duration="1397000" />
+    </task>
+    <task id="LOCAL-00001" summary="migration&#10;tensorflow 1.15 --&gt; pytorch 1.&#10;python 2 --&gt; python 3.9">
+      <created>1650211619327</created>
+      <option name="number" value="00001" />
+      <option name="presentableId" value="LOCAL-00001" />
+      <option name="project" value="LOCAL" />
+      <updated>1650211619327</updated>
+    </task>
+    <task id="LOCAL-00002" summary="Optimization&#10;training speed enhanced(about 10 times)">
+      <created>1652689658521</created>
+      <option name="number" value="00002" />
+      <option name="presentableId" value="LOCAL-00002" />
+      <option name="project" value="LOCAL" />
+      <updated>1652689658522</updated>
+    </task>
+    <task id="LOCAL-00003" summary="Optimization&#10;-before-&#10;read entity2id.txt and relation2id.txt every time when making Env class, so delaying occurs.&#10;-after-&#10;read each files only once.">
+      <created>1655794260011</created>
+      <option name="number" value="00003" />
+      <option name="presentableId" value="LOCAL-00003" />
+      <option name="project" value="LOCAL" />
+      <updated>1655794260011</updated>
+    </task>
+    <option name="localTasksCounter" value="4" />
+    <servers />
+  </component>
+  <component name="TypeScriptGeneratedFilesManager">
+    <option name="version" value="3" />
+  </component>
+  <component name="Vcs.Log.Tabs.Properties">
+    <option name="TAB_STATES">
+      <map>
+        <entry key="MAIN">
+          <value>
+            <State />
+          </value>
+        </entry>
+      </map>
+    </option>
+  </component>
+  <component name="VcsManagerConfiguration">
+    <MESSAGE value="migration&#10;tensorflow 1.15 --&gt; pytorch 1.&#10;python 2 --&gt; python 3.9" />
+    <MESSAGE value="Optimization&#10;training speed enhanced(about 10 times)" />
+    <MESSAGE value="Optimization&#10;-before-&#10;read entity2id.txt and relation2id.txt every time when making Env class, so delaying occurs.&#10;-after-&#10;read each files only once." />
+    <option name="LAST_COMMIT_MESSAGE" value="Optimization&#10;-before-&#10;read entity2id.txt and relation2id.txt every time when making Env class, so delaying occurs.&#10;-after-&#10;read each files only once." />
+  </component>
+  <component name="XDebuggerManager">
+    <breakpoint-manager>
+      <breakpoints>
+        <line-breakpoint enabled="true" suspend="THREAD" type="python-line">
+          <url>file://$PROJECT_DIR$/pytorch/env.py</url>
+          <line>6</line>
+          <option name="timeStamp" value="1" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" suspend="THREAD" type="python-line">
+          <url>file://$PROJECT_DIR$/pytorch/fact_prediction_eval.py</url>
+          <line>239</line>
+          <option name="timeStamp" value="15" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" suspend="THREAD" type="python-line">
+          <url>file://$PROJECT_DIR$/pytorch/env.py</url>
+          <line>108</line>
+          <option name="timeStamp" value="16" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" suspend="THREAD" type="python-line">
+          <url>file://$PROJECT_DIR$/pytorch/sl_policy_bert.py</url>
+          <line>78</line>
+          <option name="timeStamp" value="18" />
+        </line-breakpoint>
+      </breakpoints>
+    </breakpoint-manager>
+  </component>
+  <component name="com.intellij.coverage.CoverageDataManagerImpl">
+    <SUITE FILE_PATH="coverage/sl_policy_py$networks.coverage" NAME="networks Coverage Results" MODIFIED="1650008112531" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/pytorch" />
+    <SUITE FILE_PATH="coverage/sl_policy_py$sl_policy.coverage" NAME="sl_policy Coverage Results" MODIFIED="1658221387720" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/pytorch" />
+    <SUITE FILE_PATH="coverage/sl_policy_py$policy_agent_bert.coverage" NAME="policy_agent_bert Coverage Results" MODIFIED="1658913545240" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/pytorch" />
+    <SUITE FILE_PATH="coverage/RL_KnowledgeReasoning$test.coverage" NAME="test Coverage Results" MODIFIED="1649921602776" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/pytorch" />
+    <SUITE FILE_PATH="coverage/sl_policy_py$test.coverage" NAME="test Coverage Results" MODIFIED="1649926721491" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/pytorch" />
+    <SUITE FILE_PATH="coverage/sl_policy_py$sl_policy_vanilabert.coverage" NAME="sl_policy_vanilabert Coverage Results" MODIFIED="1658221425159" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/pytorch" />
+    <SUITE FILE_PATH="coverage/sl_policy_py$jooinjangtest.coverage" NAME="jooinjangtest Coverage Results" MODIFIED="1651406392018" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/pytorch" />
+    <SUITE FILE_PATH="coverage/sl_policy_py$fact_prediction_eval.coverage" NAME="fact_prediction_eval Coverage Results" MODIFIED="1658223840891" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/pytorch" />
+    <SUITE FILE_PATH="coverage/sl_policy_py$policy_agent_bert__1_.coverage" NAME="policy_agent_bert (1) Coverage Results" MODIFIED="1658680608176" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/pytorch" />
+    <SUITE FILE_PATH="coverage/sl_policy_py$BFS.coverage" NAME="BFS Coverage Results" MODIFIED="1650005224977" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/pytorch/BFS" />
+    <SUITE FILE_PATH="coverage/sl_policy_py$policy_agent_vanilabert.coverage" NAME="policy_agent_vanilabert Coverage Results" MODIFIED="1658223313185" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/pytorch" />
+    <SUITE FILE_PATH="coverage/sl_policy_py$filegentest.coverage" NAME="filegentest Coverage Results" MODIFIED="1650366939018" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/pytorch" />
+    <SUITE FILE_PATH="coverage/sl_policy_py$utils.coverage" NAME="utils Coverage Results" MODIFIED="1650006333284" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/pytorch" />
+    <SUITE FILE_PATH="coverage/sl_policy_py$KB.coverage" NAME="KB Coverage Results" MODIFIED="1650004865835" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/pytorch/BFS" />
+    <SUITE FILE_PATH="coverage/sl_policy_py$sl_policy_bert.coverage" NAME="sl_policy_bert Coverage Results" MODIFIED="1661517286752" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/pytorch" />
+  </component>
+</project>

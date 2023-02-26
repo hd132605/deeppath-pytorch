@@ -1,0 +1,32 @@
+time:{current_time}
+
+Test sample 0: concept_athlete_carmelo_anthony	concept_stadiumoreventvenue_tropicana_field	concept:athletehomestadium
+Episode ends due to step limit
+
+Test sample 1: concept_personeurope_robbie_fowler	concept_stadiumoreventvenue_anfield	concept:athletehomestadium
+Success
+
+Test sample 2: concept_coach_nnamdi_asomugha	concept_stadiumoreventvenue_mcafee_coliseum	concept:athletehomestadium
+Episode ends due to step limit
+
+Test sample 3: concept_athlete_garrett_olson	concept_stadiumoreventvenue_camden_yards	concept:athletehomestadium
+Episode ends due to step limit
+
+Test sample 4: concept_coach_ryan_fitzpatrick	concept_stadiumoreventvenue_paul_brown_stadium	concept:athletehomestadium
+Episode ends due to step limit
+
+Test sample 5: concept_athlete_gabe_kapler	concept_stadiumoreventvenue_tropicana_field	concept:athletehomestadium
+Episode ends due to step limit
+
+Test sample 6: concept_coach_bob_sanders	concept_stadiumoreventvenue_lucas_oil_stadium	concept:athletehomestadium
+Episode ends due to step limit
+
+Test sample 7: concept_athlete_charles_barkley	concept_stadiumoreventvenue_toyota_center	concept:athletehomestadium
+Success
+
+Test sample 8: concept_athlete_vinny_lecavalier	concept_stadiumoreventvenue_pete_times_forum	concept:athletehomestadium
+Episode ends due to step limit
+
+Test sample 9: concept_coach_david_clarkson	concept_stadiumoreventvenue_prudential_center_2	concept:athletehomestadium
+Success
+Success percentage: 0.3

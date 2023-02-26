@@ -1,0 +1,32 @@
+time:{current_time}
+
+Test sample 0: concept_televisionstation_wqpt_tv	concept_company_pbs	concept:agentbelongstoorganization
+Success
+
+Test sample 1: concept_magazine_jane	concept_geopoliticallocation_world	concept:agentbelongstoorganization
+Episode ends due to step limit
+
+Test sample 2: concept_scientist_email	concept_blog_form	concept:agentbelongstoorganization
+Episode ends due to step limit
+
+Test sample 3: concept_televisionstation_kuht	concept_company_pbs	concept:agentbelongstoorganization
+Episode ends due to step limit
+
+Test sample 4: concept_televisionstation_kwse	concept_company_pbs	concept:agentbelongstoorganization
+Success
+
+Test sample 5: concept_televisionstation_kcka	concept_company_pbs	concept:agentbelongstoorganization
+Success
+
+Test sample 6: concept_musicartist_abbas	concept_governmentorganization_government	concept:agentbelongstoorganization
+Episode ends due to step limit
+
+Test sample 7: concept_televisionstation_wenh	concept_company_pbs	concept:agentbelongstoorganization
+Success
+
+Test sample 8: concept_televisionstation_wynn	concept_winery_mirage	concept:agentbelongstoorganization
+Episode ends due to step limit
+
+Test sample 9: concept_televisionstation_wedn	concept_company_pbs	concept:agentbelongstoorganization
+Success
+Success percentage: 0.5

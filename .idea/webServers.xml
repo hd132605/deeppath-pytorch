@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="WebServers">
+    <option name="servers">
+      <webServer id="cf4b597c-855c-47a1-9923-633843efd837" name="sv6_deeppath">
+        <fileTransfer accessType="SFTP" host="163.152.163.184" port="46022" sshConfigId="80d37f6d-4e9f-428a-9383-b5080685c5c7" sshConfig="potatowook@163.152.163.184:46022 password">
+          <advancedOptions>
+            <advancedOptions dataProtectionLevel="Private" passiveMode="true" shareSSLContext="true" />
+          </advancedOptions>
+        </fileTransfer>
+      </webServer>
+    </option>
+  </component>
+</project>
